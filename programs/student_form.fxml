@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10"
+      xmlns="http://javafx.com/javafx/25.0.2"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.StudentController">
+
+    <TextField fx:id="nameField" promptText="Name"/>
+    <TextField fx:id="emailField" promptText="Email"/>
+    <TextField fx:id="deptField" promptText="Department"/>
+
+    <HBox spacing="10">
+        <Button text="Add" onAction="#addStudent"/>
+        <Button text="Update" onAction="#updateStudent"/>
+        <Button text="Delete" onAction="#deleteStudent"/>
+    </HBox>
+
+    <TableView fx:id="table" onMouseClicked="#selectStudent">
+        <columns>
+            <TableColumn fx:id="idCol" text="ID"/>
+            <TableColumn fx:id="nameCol" text="Name"/>
+            <TableColumn fx:id="emailCol" text="Email"/>
+            <TableColumn fx:id="deptCol" text="Department"/>
+        </columns>
+    </TableView>
+
+</VBox>

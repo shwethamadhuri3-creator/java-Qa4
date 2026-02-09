@@ -1,0 +1,9 @@
+<TableView fx:id="table" xmlns:fx="http://javafx.com/fxml"
+           fx:controller="controller.StudentController">
+    <columns>
+        <TableColumn text="ID" fx:id="idCol"/>
+        <TableColumn text="Name" fx:id="nameCol"/>
+        <TableColumn text="Email" fx:id="emailCol"/>
+        <TableColumn text="Department" fx:id="deptCol"/>
+    </columns>
+</TableView>
